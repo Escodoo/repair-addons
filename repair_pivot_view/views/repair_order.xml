@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 - TODAY, Marcel Savegnago - Escodoo
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="view_repair_order_pivot" model="ir.ui.view">
+        <field name="name">Repair Orders Pivot</field>
+        <field name="model">repair.order</field>
+        <field name="type">pivot</field>
+        <field name="arch" type="xml">
+            <pivot string="Repair Orders" display_quantity="true">
+                <field name="state" type="row"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="repair.action_repair_order_tree" model="ir.actions.act_window">
+        <field name="view_mode">tree,kanban,calendar,timeline,pivot,form</field>
+    </record>
+
+
+</odoo>
