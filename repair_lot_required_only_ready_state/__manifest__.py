@@ -6,6 +6,7 @@
     'summary': """
         This module change traceability field required by state.""",
     'version': '12.0.1.0.0',
+'category': 'Manufacturing',
     'license': 'AGPL-3',
     'author': 'Escodoo,Odoo Community Association (OCA)',
     'website': 'https://github.com/oca/manufacture',
@@ -16,5 +17,4 @@
     'data': [
         'views/repair_line.xml',
     ],
-
 }
