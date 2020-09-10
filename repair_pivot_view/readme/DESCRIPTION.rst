@@ -1,1 +1,1 @@
-This Module adds a timeline view for the repair orders
+This Module adds a pivot view for the repair orders
