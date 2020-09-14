@@ -16,7 +16,7 @@
     </record>
 
     <record id="repair.action_repair_order_tree" model="ir.actions.act_window">
-        <field name="view_mode">tree,kanban,calendar,timeline,pivot,form</field>
+        <field name="view_mode">tree,kanban,calendar,pivot,form</field>
     </record>
 
 
