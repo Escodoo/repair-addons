@@ -9,29 +9,19 @@
         <field name="model">repair.order</field>
         <field name="inherit_id" ref="repair.view_repair_order_form"/>
         <field name="arch" type="xml">
-
             <xpath expr="//field[@name='operations']/tree/field[@name='product_id']" position="after">
                 <field name="order_state" invisible="1"/>
             </xpath>
-
             <xpath expr="//field[@name='operations']//form" position="inside">
                 <group name="order_state" invisible="1">
                     <field name="order_state" invisible="1"/>
                 </group>
             </xpath>
-
             <xpath expr="//field[@name='operations']/form/notebook/page//group" position="inside">
                 <group>
                     <field name="order_state" invisible="1"/>
                 </group>
             </xpath>
-
-<!--            <xpath expr="//field[@name='operations']/tree" position="attributes">-->
-<!--                <attribute name="create">order_state=='draft'</attribute>-->
-<!--                <attribute name="delete">order_state != 'ready'</attribute>-->
-<!--            </xpath>-->
-
-
         </field>
     </record>
 
